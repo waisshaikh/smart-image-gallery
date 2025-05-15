@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartImage_Gallery</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      📸  Smart Image Gallery <span class="brand">Champspace Pvt Limited</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <input type="text" id="search" placeholder="Search images..." />
+
+    <div class="filters">
+      <button data-category="all">All</button>
+      <button data-category="Nature & Landscapes">Nature & Landscapes</button>
+      <button data-category="Abstract Art">Abstract Art</button>
+      <button data-category="Black & White Photography">Black & White Photography</button>
+      <button data-category="Portraits & People">Portraits & People</button>
+      <button data-category="Architecture & Interiors">Architecture & Interiors</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+  </div>
+
+  <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
